@@ -1,0 +1,16 @@
+config:
+  target: 'https://accounting.nonlive.services.platform.otto.de'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+    headers:
+      accept: 'application/json'
+      accept-language: 'en-US,en;q=0.8'
+      accept-encoding: 'gzip, deflate'
+      user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+      Authorization: 'Basic b2N0b2Nvcm4tbWVtYmVyOnBhQUMyN2VkNUBrVVF4M1hOQFp1'
+scenarios:
+  - flow:
+      - get:
+          url: "/accounting/invoice"

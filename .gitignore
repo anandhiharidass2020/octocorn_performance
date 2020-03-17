@@ -1,0 +1,51 @@
+HELP.md
+.gradle
+build/
+security-reports
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### CDC Messages
+messages/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Terraform ###
+.terraform
+
+###
+src/main/resources/keystore-local.p12
+
+### node modules ###
+screenshots/**
+*/node_modules/**
+*/node_modules/**
+node_modules/
+
+###
+**/.DS_Store
